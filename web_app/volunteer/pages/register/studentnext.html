@@ -1,0 +1,91 @@
+<div class="container">
+  <div class="section" ng-controller="RegisterCtrl">
+    <div class="row">
+            <div class="col s12 m12 l8 col offset-l2">
+              <div class="card-panel">
+                <h4 class="header2">Welcome {{newStudent[0].first_name}} {{newStudent[0].last_name}} ! Please complete your profile to get started</h4>
+                <div class="row">
+                  <form class="col s12" ng-submit="addStudent(newStudent)" method="post">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="first_name" ng-model="newStudent.first_name" type="text">
+                        <label for="first_name">First Name</label>
+                      </div>
+                    
+                      <div class="input-field col s6">
+                        <input id="last_name" ng-model="newStudent.last_name" type="text">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="email" ng-model="newStudent.email" type="email">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="password" ng-model="newStudent.password" type="password">
+                        <label for="password">Password</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="mob" ng-model="newStudent.mob" type="text">
+                        <label for="mob">Mobile Number</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <select material-select ng-model="newStudent.gender">
+                          <option value="" disabled selected>Select</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="3">Other</option>
+                        </select>
+                        <label>Gender</label>
+                      </div>                        
+                      <div class="input-field col s6">
+                       <input input-date
+                type="text"
+                name="created"
+                id="inputCreated"
+                ng-model="currentTime"
+                container="body"
+                format="dd/mm/yyyy"
+                months-full="{{ month }}"
+                months-short="{{ monthShort }}"
+                weekdays-full="{{ weekdaysFull }}"
+                weekdays-short="{{ weekdaysShort }}"
+                weekdays-letter="{{ weekdaysLetter }}"
+                disable="disable"
+                max="{{ maxDate }}"
+                today="today"
+                clear="clear"
+                close="close"
+                select-years="80"
+                on-start="onStart()"
+                on-render="onRender()"
+                on-open="onOpen()"
+                on-close="onClose()"
+                on-set="onSet()"
+                on-stop="onStop()"
+            />
+                        <label for="dob">DOB</label>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Next
+                            <i class="mdi-content-send right"></i>
+                          </button>
+                        </div>
+                      </div>
+                   
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>

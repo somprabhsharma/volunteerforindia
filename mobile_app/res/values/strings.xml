@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VOI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="lblServerPath">Server Path</string>
+	<string name="btnSave">Save</string>
+	
+	
+	<string name="ServerPath">ServerPath</string>
+	<string name="SharedPreferences_Screen_Settings">SharedPreferences_Screen_Settings</string>
+	
+	<string name="error_serverPath_cannot_null">Please enter Server Path</string>
+	<string name="error_shost_url_null"><html><body><b>Error: Could not load application data.</b></body></html></string>
+	
+</resources>

@@ -1,0 +1,7 @@
+{	
+	"host":"yourdatabaseurl.rds.amazonaws.com",
+	"port":"3306",
+	"username":"yourusername",
+	"password":"yourpassword",
+	"db":"volunteerforindia"
+}

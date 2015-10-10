@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="section" ng-controller="LoginCtrl">
+    <div class="row">
+            <div class="col s12 m12 l6 col offset-l3">
+              <div class="card-panel">
+                <h4 align="center">Volunteer For India</h4>
+                <div class="row">
+                                              <form class="col s12" ng-submit="login(logindata)" method="post">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="mdi-social-person-outline prefix"></i>
+            <input id="email" type="text" ng-model="logindata.email">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password" ng-model="logindata.password">
+                        <label for="password">Password</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <select material-select ng-model="logindata.type">
+                          <option value="" disabled selected>Select</option>
+                          <option value="volunteer">Volunteer</option>
+                          <option value="ngo">NGO</option>
+                        </select>
+                        <label>I am a</label>
+                      </div>     
+                      <div class="row">          
+              <div class="input-field col s12 m12 l12  login-text">
+                  <input type="checkbox" id="remember-me" />
+                  <label for="remember-me">Remember me</label>
+              </div>
+            </div>
+            <div class="row">
+                        <div class="input-field col s12">
+                          <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Login
+                          </button>
+                        </div>
+                      </div>
+            <div class="row">
+              <div class="input-field col s6 m6 l6">
+                <p class="margin medium-small"><a href="#/register">Register Now!</a></p>
+              </div>
+                   
+                    </div>
+                  </form>
+                </div>
+     
+            </div>
+        </div>
+  </div>
+</div>
